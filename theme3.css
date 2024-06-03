@@ -1,0 +1,255 @@
+body {
+	--radius-s: 5px;
+	--radius-m: 5px;
+	--radius-l: 5px;
+	--input-radius: 5px;
+	--tab-radius-active: 1px;
+	--checkbox-radius: 2px;
+	--toggle-radius: 2px;
+	--toggle-thumb-radius: 2px;
+	--slider-thumb-radius: 2px;
+  
+  
+} 
+.theme-dark:not(.pdf-shadows-on),
+.theme-light:not(.pdf-shadows-on){--pdf-shadow:none;--pdf-thumbnail-shadow:none}
+.theme-dark:not(.pdf-shadows-on) .pdf-viewer .page,.theme-light:not(.pdf-shadows-on) 
+.pdf-viewer .page{border:0}.theme-dark:not(.pdf-shadows-on) .pdf-sidebar-container 
+.thumbnailSelectionRing,.theme-light:not(.pdf-shadows-on) .pdf-sidebar-container 
+.thumbnailSelectionRing{padding:0}.theme-dark:not(.pdf-shadows-on) .pdf-sidebar-container 
+.thumbnail::after,.theme-light:not(.pdf-shadows-on) .pdf-sidebar-container 
+.thumbnail::after{right:var(--size-4-2);bottom:var(--size-4-2)}.theme-dark{--pdf-thumbnail-shadow:0 0 1px 0 rgba(0,0,0,0.6);
+--pdf-shadow:0 0 1px 0 rgba(0,0,0,0.6)}.theme-dark .pdf-viewer .canvasWrapper{opacity:var(--pdf-dark-opacity)}
+.theme-dark.pdf-invert-dark .workspace-leaf-content[data-type=pdf] .pdf-viewer .canvasWrapper{filter:invert(1) hue-rotate(180deg);mix-blend-mode:screen}
+.theme-light.pdf-blend-light .workspace-leaf-content[data-type=pdf] .pdf-viewer .canvasWrapper{mix-blend-mode:multiply}
+
+
+
+.theme-dark {   
+    --color-scheme: dark; 
+    /* ------------------------------------------------------------ */
+    --Bgnd: #30222B;    /* Background Color */
+    --background-table-rows: var(--Bgnd);
+    --ribbon-background: var(--Bgnd);
+    --search-result-background: var(--EBgnd);
+    --titlebar-background: var(--Bgnd);
+    --titlebar-background-focused: var(--Bgnd);
+    --titlebar-border-color: var(--Bgnd);
+    --background-secondary: var(--Bgnd);  
+    /* ------------------------------------------------------------ */
+    --EBgnd: #252429;   /* Editor Background Color */
+    --background-modifier-form-field-highlighted: var(--EBgnd);
+    --background-modifier-form-field: var(--EBgnd);
+    --background-primary: var(--EBgnd);
+    /* ------------------------------------------------------------ */
+    --Bgcl: #A32D7F52;  /* Background Accent Clear */
+    --background-modifier-hover: var(--Bgcl);
+    --background-modifier-active-hover: var(--Bgcl);
+    --nav-item-background-active: var(--Bgcl);
+    --nav-item-background-hover: var(--Bgcl);
+    --text-highlight-bg: var(--Bgcl);
+    
+    /* ------------------------------------------------------------ */
+    --AccentA1: #a32d7f;/* Main Accent Color */
+    --background-modifier-border-focus: var(--AccentA1);
+    --checkbox-color: var(--AccentA1);
+    --prompt-border-color: var(--AccentA1);
+    --scrollbar-active-thumb-bg: var(--AccentA1);
+    --interactive-accent: var(--AccentA1);
+    /* ------------------------------------------------------------ */
+    --Axt: #A32D7F36;   /* Transparent Accent Color */
+    --divider-color: var(--Axt);
+    --interactive-hover: var(--Axt);
+    --modal-border-color: var(--Axt);
+    --background-modifier-border: var(--Axt);
+    --frame-divider-color: var(--Axt);
+    --nav-indentation-guide-color: var(--Axt);
+    --scrollbar-thumb-bg: var(--Axt);
+    --tab-outline-color: var(--Axt);
+    /* ------------------------------------------------------------ */
+    --AccentA2: #D560B1;/* Secondary Accent */
+    --background-modifier-accent: var(--AccentA2);
+    --interactive-accent-hover: var(--AccentA2);
+    --text-accent-hover: var(--AccentA2);
+    --text-accent: var(--AccentA2);
+    /* ------------------------------------------------------------ */
+    --txt: #C8A2C8;     /* Normal text */
+    --nav-item-color: var(--txt);
+    --nav-item-color-active: var(--txt);
+    --nav-item-color-hover: var(--txt);
+    --text-normal: var(--txt);
+    --text-code: var(--txi);
+    --text-italic: var(--txt);
+    --text-bold: var(--txt);
+    --tab-text-color-focused-active: var(--txt);
+    --icon-color-active: var(--txt);
+    --icon-color-focused: var(--txt);
+    --code-normal: var(--txi);
+    --titlebar-text-color: #C8A2C8;
+    --titlebar-text-color-focused: #C8A2C8;
+    /* ------------------------------------------------------------ */
+    --txi: #c576c5a2;   /* transparent text */
+    --icon-color-hover: var(--txi);
+    --icon-color: var(--txi);
+    --nav-collapse-icon-color: var(--txi);
+    --nav-collapse-icon-color-collapsed: var(--txi);
+    --list-marker-color: var(--txi);
+    --text-selection: var(--txi);
+    --text-formatting: var(--txi);
+    --text-muted: var(--txi);
+    --text-faint: var(--txi);
+    --text-error: #f1637d;
+    --text-blockquote: var(--txi);
+    /* ------------------------------------------------------------ */
+    --Axt2: #50125A94;
+    --background-modifier-border-hover: var(--Axt2);
+    --quote-opening-modifier: var(--Axt2);
+    /* ------------------------------------------------------------ */
+    --bold-color: #967BB6;
+    /* ------------------------------------------------------------ */
+    --italic-color: #FCA287;
+    /* ------------------------------------------------------------ */
+    --text-formatting: #967BB6;
+    /* ------------------------------------------------------------ */
+    --icon-color: #C8A2C8;
+    /* ------------------------------------------------------------ */
+    --scrollbar-bg: transparent;
+    
+  }
+.theme-light {
+/* ------------------------------------------------------------ */
+    --Bgnd: #412438;    /* Background Color */
+    --background-table-rows: var(--Bgnd);
+    --ribbon-background: var(--Bgnd);
+    --search-result-background: var(--EBgnd);
+    --titlebar-background: var(--Bgnd);
+    --titlebar-background-focused: var(--Bgnd);
+    --titlebar-border-color: var(--Bgnd);
+    --background-secondary: var(--Bgnd);  
+    --tab-container-background: var(--Bgnd);  
+    /* ------------------------------------------------------------ */
+    --EBgnd: #C8A2C8;   /* Editor Background Color */
+    --background-modifier-form-field-highlighted: var(--EBgnd);
+    --background-modifier-form-field: var(--EBgnd);
+    --background-primary: var(--EBgnd);
+    /* ------------------------------------------------------------ */
+    --Bgcl: #A32D7F52;  /* Background Accent Clear */
+    --background-modifier-hover: var(--Bgcl);
+    --background-modifier-active-hover: var(--Bgcl);
+    --nav-item-background-active: var(--Bgcl);
+    --nav-item-background-hover: var(--Bgcl);
+    --text-highlight-bg: var(--Bgcl);
+    /* ------------------------------------------------------------ */
+    --AccentA1: #a32d7f;/* Main Accent Color */
+    --background-modifier-border-focus: var(--AccentA1);
+    --checkbox-color: var(--AccentA1);
+    --prompt-border-color: var(--AccentA1);
+    --scrollbar-active-thumb-bg: var(--AccentA1);
+    --interactive-accent: var(--AccentA1);
+    /* ------------------------------------------------------------ */
+    --Axt: #A32D7F36;   /* Transparent Accent Color */
+    --divider-color: var(--Axt);
+    --interactive-hover: var(--Axt);
+    --modal-border-color: var(--Axt);
+    --background-modifier-border: var(--Axt);
+    --frame-divider-color: var(--Axt);
+    --nav-indentation-guide-color: var(--Axt);
+    --scrollbar-thumb-bg: var(--Axt);
+    --tab-outline-color: var(--Axt);
+    /* ------------------------------------------------------------ */
+    --AccentA2: #D560B1;/* Secondary Accent */
+    --background-modifier-accent: var(--AccentA2);
+    --interactive-accent-hover: var(--AccentA2);
+    --text-accent-hover: var(--AccentA2);
+    --text-accent: var(--AccentA2);
+    /* ------------------------------------------------------------ */
+    --txt: #C8A2C8;     /* Normal text */
+    --nav-item-color: var(--txt);
+    --nav-item-color-active: var(--txt);
+    --nav-item-color-hover: var(--txt);
+    --text-normal: var(--txt);
+    --text-code: var(--txt);
+    --text-italic: var(--txt);
+    --text-bold: var(--txt);
+    --tab-text-color-focused-active: var(--txt);
+    --icon-color-active: var(--txt);
+    --icon-color-focused: var(--txt);
+    --code-normal: var(--txt);
+    --titlebar-text-color: #C8A2C8;
+    --titlebar-text-color-focused: #C8A2C8;
+    /* ------------------------------------------------------------ */
+    --txi: #24262a;   /* transparent text */
+    --icon-color-hover: var(--txi);
+    --icon-color: var(--txi);
+    --nav-collapse-icon-color: var(--txi);
+    --nav-collapse-icon-color-collapsed: var(--txi);
+    --list-marker-color: var(--txi);
+    --text-selection: var(--txi);
+    --text-formatting: var(--txi);
+    --text-muted: var(--txi);
+    --text-faint: var(--txi);
+    --text-error: #f1637d;
+    --text-blockquote: var(--txi);
+    /* ------------------------------------------------------------ */
+    --Axt2: #50125A94;
+    --background-modifier-border-hover: var(--Axt2);
+    --quote-opening-modifier: var(--Axt2);
+    /* ------------------------------------------------------------ */
+    --bold-color: #967BB6;
+    /* ------------------------------------------------------------ */
+    --italic-color: #FCA287;
+    /* ------------------------------------------------------------ */
+    --text-formatting: #967BB6;
+    /* ------------------------------------------------------------ */
+    --icon-color: #C8A2C8;
+    /* ------------------------------------------------------------ */
+    --scrollbar-bg: transparent;
+  }
+/* @settings
+
+name: Allium
+id: Allium Style Settings
+settings:
+	-
+		id: pdf
+		title: PDFs
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: pdf-page-style
+		title: PDF page style
+		description: Borders and shadows around pages
+		type: class-select
+		allowEmpty: false
+		default: pdf-seamless-on
+		options:
+			-
+				label: Seamless
+				value: pdf-seamless-on
+			-
+				label: Shadows
+				value: pdf-shadows-on
+	-
+		id: pdf-invert-dark
+		title: Invert PDFs in dark mode
+		description: Best for working with black text on white pages
+		type: class-toggle
+		default: true
+	-
+		id: pdf-blend-light
+		title: Blend PDFs in light mode
+		description: Allow PDFs to blend into the color scheme background color
+		type: class-toggle
+		default: true
+	-
+		id: pdf-dark-opacity
+		title: PDF opacity in dark mode
+		description: Fade PDF pages in dark mode
+		type: variable-number-slider
+		default: 1
+		min: 0.25
+		max: 1
+		step: 0.05
+
+*/
