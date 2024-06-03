@@ -1,0 +1,246 @@
+body {
+	
+  --radius-s: 5px;
+	--radius-m: 5px;
+	--radius-l: 5px;
+	--input-radius: 5px;
+	--tab-radius-active: 1px;
+	--checkbox-radius: 2px;
+	--toggle-radius: 2px;
+	--toggle-thumb-radius: 2px;
+	--slider-thumb-radius: 2px;
+}
+  
+
+.theme-dark:not(.pdf-shadows-on),
+.theme-light:not(.pdf-shadows-on){--pdf-shadow:none;--pdf-thumbnail-shadow:none}
+.theme-dark:not(.pdf-shadows-on) .pdf-viewer .page,.theme-light:not(.pdf-shadows-on) 
+.pdf-viewer .page{border:0}.theme-dark:not(.pdf-shadows-on) .pdf-sidebar-container 
+.thumbnailSelectionRing,.theme-light:not(.pdf-shadows-on) .pdf-sidebar-container 
+.thumbnailSelectionRing{padding:0}.theme-dark:not(.pdf-shadows-on) .pdf-sidebar-container 
+.thumbnail::after,.theme-light:not(.pdf-shadows-on) .pdf-sidebar-container 
+.thumbnail::after{right:var(--size-4-2);bottom:var(--size-4-2)}.theme-dark{--pdf-thumbnail-shadow:0 0 1px 0 rgba(0,0,0,0.6);
+--pdf-shadow:0 0 1px 0 rgba(0,0,0,0.6)}.theme-dark .pdf-viewer .canvasWrapper{opacity:var(--pdf-dark-opacity)}
+.theme-dark.pdf-invert-dark .workspace-leaf-content[data-type=pdf] .pdf-viewer .canvasWrapper{filter:invert(1) hue-rotate(180deg);mix-blend-mode:screen}
+.theme-light.pdf-blend-light .workspace-leaf-content[data-type=pdf] .pdf-viewer .canvasWrapper{mix-blend-mode:multiply}
+
+.theme-dark {   
+    --nav-item-background-selected: var(--Axt);
+    /* Backgrounds */
+    --background-primary: var(--EBgnd);
+    /* Nav Menu */
+
+    /* Accents */
+
+    /* Text */
+
+
+
+    --color-scheme: dark; 
+    /* ------------------------------------------------------------ */
+    --Bgnd: #30222B;    /* Background Color */
+    --background-table-rows: var(--Bgnd);
+    --ribbon-background: var(--Bgnd);
+    --search-result-background: var(--EBgnd);
+    --titlebar-background: var(--Bgnd);
+    --titlebar-background-focused: var(--Bgnd);
+    --titlebar-border-color: var(--Bgnd);
+    --background-secondary: var(--Bgnd);  
+    /* ------------------------------------------------------------ */
+    --EBgnd: #252429;   /* Editor Background Color */
+    --background-modifier-form-field-highlighted: var(--EBgnd);
+    --background-modifier-form-field: var(--EBgnd);
+   
+    /* ------------------------------------------------------------ */
+    --Bgcl: #A32D7F52;  /* Background Accent Clear */
+    --background-modifier-hover: var(--Bgcl);
+    --background-modifier-active-hover: var(--Bgcl);
+    --nav-item-background-active: var(--Bgcl);
+    --nav-item-background-hover: var(--Bgcl);
+    --text-highlight-bg: var(--Bgcl);
+    
+    /* ------------------------------------------------------------ */
+    --AccentA1: #a32d7f;/* Main Accent Color */
+    --background-modifier-border-focus: var(--AccentA1);
+    --checkbox-color: var(--AccentA1);
+    --prompt-border-color: var(--AccentA1);
+    --scrollbar-active-thumb-bg: var(--AccentA1);
+    --interactive-accent: var(--AccentA1);
+    /* ------------------------------------------------------------ */
+    --Axt: #A32D7F36;   /* Transparent Accent Color */
+    --divider-color: var(--Axt);
+    --interactive-hover: var(--Axt);
+    --modal-border-color: var(--Axt);
+    --background-modifier-border: var(--Axt);
+    --frame-divider-color: var(--Axt);
+    --nav-indentation-guide-color: var(--Axt);
+    --scrollbar-thumb-bg: var(--Axt);
+    --tab-outline-color: var(--Axt);
+    /* ------------------------------------------------------------ */
+    --AccentA2: #D560B1;/* Secondary Accent */
+    --background-modifier-accent: var(--AccentA2);
+    --interactive-accent-hover: var(--AccentA2);
+    --text-accent-hover: var(--AccentA2);
+    --text-accent: var(--AccentA2);
+    /* ------------------------------------------------------------ */
+    --txt: #C8A2C8;     /* Normal text */
+    --nav-item-color: var(--txt);
+    --nav-item-color-active: var(--txt);
+    --nav-item-color-hover: var(--txt);
+    --text-normal: var(--txt);
+    --text-code: var(--txi);
+    --text-italic: var(--txt);
+    --text-bold: var(--txt);
+    --tab-text-color-focused-active: var(--txt);
+    --icon-color-active: var(--txt);
+    --icon-color-focused: var(--txt);
+    --code-normal: var(--txi);
+    --titlebar-text-color: #C8A2C8;
+    --titlebar-text-color-focused: #C8A2C8;
+    /* ------------------------------------------------------------ */
+    --txi: #c576c5a2;   /* transparent text */
+    --icon-color-hover: var(--txi);
+    --icon-color: var(--txi);
+    --nav-collapse-icon-color: var(--txi);
+    --nav-collapse-icon-color-collapsed: var(--txi);
+    --list-marker-color: var(--txi);
+    --text-selection: var(--txi);
+    --text-formatting: var(--txi);
+    --text-muted: var(--txi);
+    --text-faint: var(--txi);
+    --text-error: #f1637d;
+    --text-blockquote: var(--txi);
+    /* ------------------------------------------------------------ */
+    --Axt2: #50125A94;
+    --background-modifier-border-hover: var(--Axt2);
+    --quote-opening-modifier: var(--Axt2);
+    /* ------------------------------------------------------------ */
+    --bold-color: #967BB6;
+    /* ------------------------------------------------------------ */
+    --italic-color: #FCA287;
+    /* ------------------------------------------------------------ */
+    --text-formatting: #967BB6;
+    /* ------------------------------------------------------------ */
+    --icon-color: #C8A2C8;
+    /* ------------------------------------------------------------ */
+    --scrollbar-bg: transparent;
+      --color-base-00: var(--EBgnd);
+  --color-base-05: var(--EBgnd);
+  --color-base-10: var(--EBgnd);
+  --color-base-20: var(--Bgnd);
+  --color-base-25: #252429; 
+  --color-base-30: var(--Axt);
+  --color-base-35: #252429; 
+  --color-base-40: var(--Axt);
+  --color-base-50: var(--txi);
+  --color-base-60: #C8A2C8;
+  --color-base-70: #C8A2C8;
+  --color-base-100: #C8A2C8;
+    
+  }
+.theme-light {
+  --Bgnd: #30222B;    /* Background Color */
+  --EBgnd: #252429;   /* Editor Background Color */
+  --Bgcl: #A32D7F52;  /* Background Accent Clear */
+  --AccentA1: #a32d7f;/* Main Accent Color */
+  --Axt: #A32D7F36;   /* Transparent Accent Color */
+  --AccentA2: #D560B1;/* Secondary Accent */
+  --txt: #C8A2C8;     /* Normal text */
+  --txi: #c576c5a2;   /* transparent text */
+
+  --highlight-mix-blend-mode: lighten;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 255, 255;
+  --color-red-rgb: 251, 70, 76;
+  --color-red: #b5696b;
+  --color-orange-rgb: 233, 151, 63;
+  --color-orange: #e9973f;
+  --color-yellow-rgb: 224, 222, 113;
+  --color-yellow: #e0de71;
+  --color-green-rgb: 68, 207, 110;
+  --color-green: #44cf6e;
+  --color-cyan-rgb: 83, 223, 221;
+  --color-cyan: #53dfdd;
+  --color-blue-rgb: 163, 45, 127;
+  --color-blue: rgb(163, 45, 127);
+  --color-purple-rgb: 168, 130, 255;
+  --color-purple: #a882ff;
+  --color-pink-rgb: 250, 153, 205;
+  --color-pink: #fa99cd;
+  --color-base-00: var(--EBgnd);
+  --color-base-05: var(--EBgnd);
+  --color-base-10: var(--EBgnd);
+  --color-base-20: var(--Bgnd);
+  --color-base-25: #252429; 
+  --color-base-30: var(--Bgnd);
+  --color-base-35: #252429; 
+  --color-base-40: var(--Axt);
+  --color-base-50: var(--txi);
+  --color-base-60: #C8A2C8;
+  --color-base-70: #C8A2C8;
+  --color-base-100: #C8A2C8;
+  --color-accent-hsl: var(--accent-h),
+			var(--accent-s),
+			var(--accent-l);
+  --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
+  --color-accent-1: hsl(calc(var(--accent-h) - 3), calc(var(--accent-s) * 1.02), calc(var(--accent-l) * 1.15));
+  --color-accent-2: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s) * 1.05), calc(var(--accent-l) * 1.29));
+  --background-modifier-form-field: var(--color-base-25);
+  --background-secondary-alt: var(--color-base-30);
+  --interactive-normal: var(--color-base-30);
+  --interactive-hover: var(--color-base-35);
+  --text-accent: var(--color-accent-1);
+  --interactive-accent: var(--color-accent);
+  --interactive-accent-hover: var(--color-accent-1);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+  --background-modifier-cover: rgba(10, 10, 10, 0.4);
+  --text-selection: hsla(var(--interactive-accent-hsl), 0.25);
+  }
+/* @settings
+
+name: Allium
+id: Allium Style Settings
+settings:
+	-
+		id: pdf
+		title: PDFs
+		type: heading
+		level: 2
+		collapsed: true
+	-
+		id: pdf-page-style
+		title: PDF page style
+		description: Borders and shadows around pages
+		type: class-select
+		allowEmpty: false
+		default: pdf-seamless-on
+		options:
+			-
+				label: Seamless
+				value: pdf-seamless-on
+			-
+				label: Shadows
+				value: pdf-shadows-on
+	-
+		id: pdf-invert-dark
+		title: Invert PDFs in dark mode
+		description: Best for working with black text on white pages
+		type: class-toggle
+		default: true
+	-
+		id: pdf-blend-light
+		title: Blend PDFs in light mode
+		description: Allow PDFs to blend into the color scheme background color
+		type: class-toggle
+		default: true
+	-
+		id: pdf-dark-opacity
+		title: PDF opacity in dark mode
+		description: Fade PDF pages in dark mode
+		type: variable-number-slider
+		default: 1
+		min: 0.25
+		max: 1
+		step: 0.05
+
+*/
