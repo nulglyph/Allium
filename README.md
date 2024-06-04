@@ -1,5 +1,6 @@
 # Allium
-![Allium Dark Mode](AlliumScreenshot.png)
+<img width="1680" alt="Screenshot 2024-06-03 at 4 40 52 PM" src="https://github.com/nulglyph/Allium/assets/170279949/bde74c38-ea69-49ba-aacf-51d0e9348126">
+
 
 Allium is a theme inspired by allium flowers, mainly Allium atropurpureum, which has beuatiful shades of red and purple.
 
